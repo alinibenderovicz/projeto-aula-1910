@@ -10,21 +10,29 @@
 <body>
    <div class="main-login">
         <div class="left-login">
+            
             <h1>
                 Faça seu login <br> e divirta-se!
             </h1>
+            <img src="./img/computador.svg" class=imagem-login alt="mulher no pc">
         </div>
         <div class="rigth-login">
+            
+
+            
             <div class="card-login">
                 <h2>LOGIN</h2>
                 <div class="textfield">
                     <label for="usuário">Usuário</label>
                     <input type="text" name="usuario" placeholder="Usuário"/>
-                    <div>
                     <div class="textfield"></div>
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha"/>
 
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms">Eu aceito os termos</label>
                     </div>
                     <button class="btn-login">LOGIN</button>
 
@@ -32,8 +40,21 @@
             
 
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="modal-header-title">Olá visitante!</h2>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <p id="modal-body-text">Seja muito bem vindo ao nosso site!<br>Só aqui você irá aprender a programar HTML, CSS e JavaScript.</p>
+                </div>
+                <div class="modal-footer" id="modal-footer">
+                    <h3>Global Sul Cursos Profissionalizantes</h3>
+                </div>
+            </div>
+        </div>
 
-    </div>
-   </div>
+    
 </body>
 </html>

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+
 
 }
 
@@ -43,7 +47,7 @@ body * {
 }
 
 .card-login{
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -98,6 +102,23 @@ body * {
 
 }
 
+.checkbox {
+    color: white;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font: white;
+}
+
+.checkbox > input {
+    margin-right: 10px;
+    accent-color: white;
+
+
+}
+
+
 .btn-login{
     width: 100%;
     padding: 16px 0px;
@@ -113,4 +134,78 @@ body * {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
 
+}
+
+.imagem-login{
+    width: 35vw;
+
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    width: 60vw;
+    height: auto;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #00ff88;
+    color: #2f2841;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color: #2f2841;
+    height: 35vh;
+    font-size: 3vh;
+    text-align: center;
+    color: #f0ffffde;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #00ff88;
+    color: #2f2841;
+    font-size: 2vh;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.5);
+    animation-name: animetetop;
+    animation-duration: 0.4s;
+    border-radius: 15px;
+}
+
+@keyframes animetetop {
+    from {top: -300px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
